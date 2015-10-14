@@ -99,11 +99,11 @@ Partial Class LoginForm
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(89, 59)
+        Me.Label5.Location = New System.Drawing.Point(185, 49)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(853, 86)
+        Me.Label5.Size = New System.Drawing.Size(641, 86)
         Me.Label5.TabIndex = 6
-        Me.Label5.Text = "TERADYNE GENIUS KA BA?"
+        Me.Label5.Text = "TERVIA CHALLENGE"
         '
         'Panel2
         '

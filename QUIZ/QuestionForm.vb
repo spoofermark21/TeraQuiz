@@ -22,6 +22,8 @@ Public Class QuestionForm
 
     Public setBackground As Thread
 
+    'Private NumberOfAnswerIsCorrect As Integer
+
     Private setOfGreetings() As String = {"EXCELLENT!!!", "WONDERFUL!!!", "IMPRESSIVE!!!", "GOOD JOB!!!"}
 
 
@@ -147,8 +149,8 @@ Public Class QuestionForm
 
         Try
             sqlViewCon.Open()
-
-            Dim strCommand As String = "SELECT * FROM quiz.questions WHERE difficulty = 'easy' AND TYPE = 'opening' AND id <> '" & firstQuestionNo & "' ORDER BY RAND() LIMIT 1"
+            'AND id <> '" & firstQuestionNo & "'
+            Dim strCommand As String = "SELECT * FROM quiz.questions WHERE difficulty = 'medium' AND TYPE = 'opening' ORDER BY RAND() LIMIT 1"
             sqlViewCom = New MySqlCommand(strCommand, sqlViewCon)
             sqlViewReader = sqlViewCom.ExecuteReader
             sqlViewReader.Read()
@@ -210,7 +212,7 @@ Public Class QuestionForm
         Try
             sqlViewCon.Open()
 
-            Dim strCommand As String = "SELECT * FROM quiz.questions WHERE difficulty = 'hard' AND TYPE = 'opening' ORDER BY RAND() LIMIT 1"
+            Dim strCommand As String = "SELECT * FROM quiz.questions WHERE difficulty = 'difficult' AND TYPE = 'opening' ORDER BY RAND() LIMIT 1"
             sqlViewCom = New MySqlCommand(strCommand, sqlViewCon)
             sqlViewReader = sqlViewCom.ExecuteReader
             sqlViewReader.Read()

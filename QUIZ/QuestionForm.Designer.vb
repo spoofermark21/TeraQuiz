@@ -246,7 +246,7 @@ Partial Class QuestionForm
         Me.tabQuestion2.Padding = New System.Windows.Forms.Padding(3)
         Me.tabQuestion2.Size = New System.Drawing.Size(925, 721)
         Me.tabQuestion2.TabIndex = 1
-        Me.tabQuestion2.Text = "2 - EASY "
+        Me.tabQuestion2.Text = "2 - MEDIUM"
         Me.tabQuestion2.UseVisualStyleBackColor = True
         '
         'panelQuestion2

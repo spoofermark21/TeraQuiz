@@ -86,6 +86,7 @@ Partial Class Greetings
         Me.Name = "Greetings"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Greetings"
+        Me.TopMost = True
         Me.Panel1.ResumeLayout(False)
         CType(Me.picGreetings, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
